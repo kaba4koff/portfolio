@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Портфолио kabakoff</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+      padding: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      text-decoration: none; /* Чтобы убрать подчеркивание */
+      color: black;          /* Цвет текста ссылок черный */
+      display: block;        /* Чтобы весь блок был кликабельным */
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      color: #4a90e2;       /* Цвет при наведении */
+      text-decoration: underline;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      object-fit: cover;
+      height: 150px;
+    }
+    .project h3 {
+      margin: 0 0 8px 0;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: inherit; /* Наследуем цвет */
+    }
+    a.email {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+    a.email:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    @media(max-width: 480px){
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Портфолио kabakoff</h1>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>Обо мне</h2>
+      <p>Привет! Меня зовут kabakoff. Я занимаюсь созданием простых и красивых сайтов на HTML и CSS. Мои работы — это аккуратный код, современный дизайн и удобство для пользователей.</p>
+    </section>
+    <section id="projects">
+      <h2>Примеры работ:</h2>
+      <div class="projects">
+        <a href="project1.html" target="_blank" class="project" rel="noopener noreferrer">
+          <img src="https://via.placeholder.com/400x150?text=Проект+1" alt="Проект 1" />
+          <h3>Сайт-визитка для фотографа</h3>
+          <p>Простой и светлый сайт с портфолио и контактами.</p>
+        </a>
+        <a href="project2.html" target="_blank" class="project" rel="noopener noreferrer">
+          <img src="https://via.placeholder.com/400x150?text=Проект+2" alt="Проект 2" />
+          <h3>Лендинг для фитнес-тренера</h3>
+          <p>Продающая страница с описанием услуг и формой записи.</p>
+        </a>
+        <a href="project3.html" target="_blank" class="project" rel="noopener noreferrer">
+          <img src="https://via.placeholder.com/400x150?text=Проект+3" alt="Проект 3" />
+          <h3>Блог о путешествиях</h3>
+          <p>Красивый блог с удобной навигацией и адаптивным дизайном.</p>
+        </a>
+      </div>
+    </section>
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Пишите мне на email: <a class="email" href="mailto:arnoldmordovorotov@gmail.com">arnoldmordovorotov@gmail.com</a></p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 kabakoff. Все права защищены.
+  </footer>
+</body>
+</html>
+
+

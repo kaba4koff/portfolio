@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Фотограф — Портфолио</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 1.2px;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .intro p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Фотограф Иван Иванов</h1>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">Портфолио</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <p>Профессиональный фотограф с опытом более 10 лет. Создаю живые и выразительные снимки для любого случая.</p>
+    </section>
+    <section class="gallery">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Пример фото 1" />
+      <img src="https://picsum.photos/id/1016/600/400" alt="Пример фото 2" />
+      <img src="https://picsum.photos/id/1025/600/400" alt="Пример фото 3" />
+      <img src="https://picsum.photos/id/1035/600/400" alt="Пример фото 4" />
+      <img src="https://picsum.photos/id/1045/600/400" alt="Пример фото 5" />
+      <img src="https://picsum.photos/id/1055/600/400" alt="Пример фото 6" />
+    </section>
+  </main>
+  <footer>
+    Email: example@mail.com | Телефон: +7 (999) 000-00-00
+  </footer>
+</body>
+</html>
